@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'food-app';
+  showRecipe = true;
+
+  goTo(event: string) {
+    (event === 'shopping') ? this.showRecipe = false : this.showRecipe = true;
+  }
 }
